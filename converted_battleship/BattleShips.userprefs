@@ -1,16 +1,10 @@
 ﻿<Properties StartupItem="BattleShips.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Mac|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="c:\School work\Processes class\converted_battleship\src\DeploymentController.cs">
-    <Files>
-      <File FileName="src\Model\AIPlayer.cs" Line="1" Column="1" />
-      <File FileName="src\Model\AIHardPlayer.cs" Line="1" Column="1" />
-      <File FileName="src\Model\AIMediumPlayer.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="1" Column="1" />
-      <File FileName="c:\School work\Processes class\converted_battleship\src\DeploymentController.cs" Line="6" Column="14" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Sneakka/Desktop/Jayden/Semester 2/Development Project/Battleships/converted_battleship/src/GameResources.cs" line="272" column="16" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

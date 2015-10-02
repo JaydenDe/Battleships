@@ -21,12 +21,12 @@ using static MenuController;
 
 using static HighScoreController;
 
-/// <summary>
-/// The DeploymentController controls the players actions
-/// during the deployment phase.
-/// </summary>
-namespace Battleships
+namespace BattleShips
 {
+	/// <summary>
+	/// The DeploymentController controls the players actions
+	/// during the deployment phase.
+	/// </summary>
 	static class DeploymentController
 	{
 		private const int SHIPS_TOP = 98;
