@@ -7,6 +7,13 @@ using SwinGameSDK;
 
 namespace BattleShips
 {
+	using static UtilityFunctions;
+	using static GameResources;
+	using static DeploymentController;
+	using static DiscoveryController;
+	using static EndingGameController;
+	using static MenuController;
+	using static HighScoreController;
 	/// <summary>
 	/// The GameController is responsible for controlling the game,
 	/// managing user input, and displaying the current state of the

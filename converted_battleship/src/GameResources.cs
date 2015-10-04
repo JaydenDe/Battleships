@@ -7,6 +7,17 @@ using SwinGameSDK;
 
 namespace BattleShips
 {
+	using static GameController;
+	using static UtilityFunctions;
+	using static DeploymentController;
+	using static DiscoveryController;
+	using static EndingGameController;
+	using static MenuController;
+	using static HighScoreController;
+
+	/// <summary>
+	/// Game resources.
+	/// </summary>
 	public static class GameResources
 	{
 
@@ -69,7 +80,7 @@ namespace BattleShips
 
 		public static Font GameFont(string font)
 		{
-			return _Fonts(font);
+			return _Fonts[font];
 		}
 
 		/// <summary>
@@ -80,7 +91,7 @@ namespace BattleShips
 
 		public static Bitmap GameImage(string image)
 		{
-			return _Images(image);
+			return _Images[image];
 		}
 
 		/// <summary>
@@ -91,7 +102,7 @@ namespace BattleShips
 
 		public static SoundEffect GameSound(string sound)
 		{
-			return _Sounds(sound);
+			return _Sounds[sound];
 		}
 
 		/// <summary>
@@ -102,7 +113,7 @@ namespace BattleShips
 
 		public static Music GameMusic(string music)
 		{
-			return _Music(music);
+			return _Music[music];
 		}
 
 		private static Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
