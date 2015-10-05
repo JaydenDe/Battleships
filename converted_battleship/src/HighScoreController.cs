@@ -194,15 +194,16 @@ namespace BattleShips
 
 					DrawBackground();
 					DrawHighScores();
-					SwinGame.DrawText("Name: ", Color.White, GameFont("Courier"), SCORES_LEFT, ENTRY_TOP);
+					s.Name = SwinGame.TextReadAsASCII();
+
+					if (s.Name.Length < 3) {
+						s.Name = s.Name + new string(Convert.ToChar(" "), 3 - s.Name.Length);
+					}
+					SwinGame.DrawText("Name: " + s.Name, Color.White, GameFont("Courier"), SCORES_LEFT, ENTRY_TOP);
 					SwinGame.RefreshScreen();
 				}
 
-				s.Name = SwinGame.TextReadAsASCII();
 
-				if (s.Name.Length < 3) {
-					s.Name = s.Name + new string(Convert.ToChar(" "), 3 - s.Name.Length);
-				}
 
 				_Scores.RemoveAt(_Scores.Count - 1);
 				_Scores.Add(s);
