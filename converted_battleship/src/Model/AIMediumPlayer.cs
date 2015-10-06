@@ -27,6 +27,11 @@ namespace BattleShips
 		private AIStates _CurrentState = AIStates.Searching;
 
 		private Stack<Location> _Targets = new Stack<Location>();
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="BattleShips.AIMediumPlayer"/> class.
+		/// </summary>
+		/// <param name="controller">Controller.</param>
 		public AIMediumPlayer(BattleShipsGame controller) : base(controller)
 		{
 		}

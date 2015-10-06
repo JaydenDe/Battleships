@@ -303,7 +303,9 @@ namespace BattleShips
 				Audio.FreeMusic(obj);
 			}
 		}
-
+		/// <summary>
+		/// Frees the resources.
+		/// </summary>
 		public static void FreeResources()
 		{
 			FreeFonts();

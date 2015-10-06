@@ -42,6 +42,10 @@ namespace BattleShips
 			set { _enemyGrid = value; }
 		}
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="BattleShips.Player"/> class.
+		/// </summary>
+		/// <param name="controller">Controller.</param>
 		public Player(BattleShipsGame controller)
 		{
 			_game = controller;
@@ -79,6 +83,10 @@ namespace BattleShips
 			get { return _playerGrid.AllDeployed; }
 		}
 
+		/// <summary>
+		/// Gets a value indicating whether this instance is destroyed.
+		/// </summary>
+		/// <value><c>true</c> if this instance is destroyed; otherwise, <c>false</c>.</value>
 		public bool IsDestroyed {
 	//Check if all ships are destroyed... -1 for the none ship
 			get { return _playerGrid.ShipsKilled == Enum.GetValues(typeof(ShipName)).Length - 1; }
@@ -107,6 +115,10 @@ namespace BattleShips
 			get { return _shots; }
 		}
 
+		/// <summary>
+		/// Gets the hits.
+		/// </summary>
+		/// <value>The hits.</value>
 		public int Hits {
 			get { return _hits; }
 		}
@@ -120,6 +132,10 @@ namespace BattleShips
 			get { return _misses; }
 		}
 
+		/// <summary>
+		/// Gets the score.
+		/// </summary>
+		/// <value>The score.</value>
 		public int Score {
 			get {
 				if (IsDestroyed) {
@@ -198,6 +214,9 @@ namespace BattleShips
 			return result;
 		}
 
+		/// <summary>
+		/// Randomizes the deployment.
+		/// </summary>
 		public virtual void RandomizeDeployment()
 		{
 			bool placementSuccessful = false;
