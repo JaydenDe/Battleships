@@ -137,6 +137,7 @@ namespace BattleShips
 
 			//For all of the scores
 			int i = 0;
+
 			for (i = 0; i <= _Scores.Count - 1; i++) {
 				Score s = default(Score);
 
@@ -208,7 +209,7 @@ namespace BattleShips
 				_Scores.RemoveAt(_Scores.Count - 1);
 				_Scores.Add(s);
 				_Scores.Sort();
-
+                SaveScores();
 				EndCurrentState();
 			}
 		}
