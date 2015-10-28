@@ -161,10 +161,18 @@ namespace BattleShips
 			bool isHuman = false;
 			isHuman = object.ReferenceEquals(_theGame.Player, HumanPlayer);
 
-			if (isHuman) {
-				Message = "You " + result.ToString();
+			Console.WriteLine (result.ToString ());
+			if (isHuman) 
+			{
+				if (result.ToString ().Contains ("destroyed") )
+					Message = "You destroyed the enemies" + result.ToString().Replace ("destroyed", "");
+				else
+					Message = "You " + result.ToString();
 			} else {
-				Message = "The AI " + result.ToString();
+				if (result.ToString ().Contains ("destroyed") )
+					Message = "The enemy destroyed your"  + result.ToString().Replace ("destroyed", "");
+				else
+					Message = "The AI " + result.ToString ();
 			}
 
 			switch (result.Value) {
